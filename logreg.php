@@ -7,7 +7,7 @@ $status = $_GET["s"];
 require_once("connect.php");
 // Select table from database
 $allUsers = mysqli_query($link, "SELECT * FROM registrated_users");
-// Autorisation
+// Authorization
 if($status == "logIn"){
     // If table has data
     if(mysqli_num_rows($allUsers) > 0){
